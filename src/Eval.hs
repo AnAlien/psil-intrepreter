@@ -4,6 +4,7 @@ module Eval where
 import Expression
 
 -- Evaluating Psil Expression
-eval :: Expr -> Expr
+eval :: Expr -> Integer
 eval e = case e of
-    PsilInt n -> PsilInt n
+    PsilInt n -> n
+    Plus x y -> (eval x) + (eval y)
