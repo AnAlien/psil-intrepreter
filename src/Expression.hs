@@ -7,6 +7,7 @@ data PsilExpr = PsilAtom String
               | PsilInt Integer
               | PsilString String
               | PsilList [PsilExpr]
+              | PsilBool Bool
 
 
 -- Prints Psil expression
