@@ -3,6 +3,7 @@ module Parser where
 
 import Text.ParserCombinators.Parsec
 import Expression
+import Control.Monad
 
 symbol :: Parser Char
 symbol = oneOf "+*-/"

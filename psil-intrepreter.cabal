@@ -8,7 +8,7 @@ description: Intrepreter for Psil(Pronounded sil) Language.
 data-dir: ""
 
 executable psil-intrepreter
-    build-depends: QuickCheck -any, 
+    build-depends: QuickCheck -any,
                     base -any,
                      parsec,
                    parsec3,
@@ -24,4 +24,3 @@ test-suite test-psil-intrepreter
     buildable: True
     cpp-options: -DMAIN_FUNCTION=testMain
     hs-source-dirs: src
- 
